@@ -1,0 +1,19 @@
+1. What is Spatial Locality and why does it benefit performance?
+
+  Arrays are an example of when data is stored in consecutive memory locations.
+  Spatial Locality more broadly refers to situations where data is used that is
+  stored in 'relatively close' storage locations. Thinking back to when I used to
+  de-fragment my hard drive it is helpful to visualize a collection of data that I
+  want to access as a whole and imagine that all the bits that make it up are stored
+  in scattered fragments across the hard drive. As I understand Spatial Locality and
+  how it relates to performance the benefits come into play because of Caching. When
+  a data is pulled from RAM to the Cache, it isn't just a single location pulled in
+  but a 'range of locations.' So an Array benefits in performance because the array
+  is stored in a consecutive range of locations and so it is pulled in together to the
+  Cache.
+
+2. Benchmarks Array vs. Linkedlist
+
+  I have a repl setup with the benchmarks, located @:
+
+  https://repl.it/repls/TurboComfortableComputationallinguistics
