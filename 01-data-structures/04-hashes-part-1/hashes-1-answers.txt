@@ -1,0 +1,6 @@
+1. Why doubling the size of the underlying array of your HashClass may be a poor idea.
+
+Arbitrarily doubling an array when there may be only a single collision may be overkill.
+It would seem smarter to resize the array to a size more suited to how much new space
+is actually needed. The amount of consecutive memory allocated for a new doubled Array
+could start to burden the cache and require more calls to RAM.
