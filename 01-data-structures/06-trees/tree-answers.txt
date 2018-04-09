@@ -1,0 +1,28 @@
+1. While there is a general similarity in seeing a trend of values
+increasing as I visually scan down the completed trees (BinarySearch & MinHeap),
+Starting with the root node there are obvious differences in how the two
+methods order things. The MinHeap will always place the lowest value at root,
+while the root for a BinarySearch will always be a value in the middle of it's
+two children. The MinHeap creates a clear trend on the whole of value increasing
+towards the leaves, while BinarySearch shows that same overall increasing trend
+but from a more balanced perspective in the sense that the tree is fundamentally
+binary. That being said because a Heap is a complete tree it does represent its
+own version of balanced.
+
+2. Benchmarks
+
+Summary of findings:
+                BST       minHeap
+Insert avg    0.0019      0.0003
+Find          0.0018      0.0009
+Delete avg    0.0054      0.0021
+
+Full results tables located at:
+BinarySearchTree: https://repl.it/@kevinbudd/HideousMulticoloredBacktick
+MinBinaryHeap   : https://repl.it/@kevinbudd/DeepExaltedEmulator
+
+When use a BST? When searching or sorting is a top priority a BST is a good choice.
+The nature of a BST maintains that a tree is already sorted on each level of the tree.
+
+When use a minHeap? Heaps are best for Priority Queue's where we might need to insert
+lots of items and need to grab off the top item, whether maxHeap or minHeap at anytime.
